@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <title>kitkat landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <header>
+    <nav class="navbar container flex-orizontal">
+      <img src="img/logo.png" alt="logo kitkat" />
+      <div class="headerbtn">
+        <a class="redbtn" href="/">Acquista ora</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero__container container flex-orizontal">
+      <div class="heroleft">
+        <h1>Da oggi il Break è anche Online!</h1>
+        <p>Scopri tutti i prodotti disponibili nel nostro store</p>
+        <a class="redbtn whitebtn" href="/">Acquista ora</a>
+      </div>
+      <div class="heroright">
+        <img src="img/bg-hero.png" alt="kitkat barrette tre gusti" />
+      </div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="infotop__container container flex-vertical">
+      <h2>KitKat Originale</h2>
+      <p>
+        Più latte, più cacao, stesso gusto unico e inconfondibile. Lo snack
+        ideale per un Break goloso e croccante.
+      </p>
+      <img src="img/kitkat.png" alt="kitkat barrette tre gusti" />
+      <a class="redbtn" href="/">Acquista ora</a>
+    </div>
+    <div class="infotable container">
+      <h2>Informazioni nutrizionali</h2>
+      <table>
+        <tr>
+          <th>Valori</th>
+          <th>Per 100g</th>
+          <th>Per porzione (41,5g)</th>
+          <th>% per porzione</th>
+        </tr>
+        <tr>
+          <td class="red">Energia</td>
+          <td>2150 kJ</td>
+          <td>892 kJ</td>
+          <td>11%</td>
+        </tr>
+        <tr>
+          <td class="red">Grassi</td>
+          <td>2150 kJ</td>
+          <td>892 kJ</td>
+          <td>11%</td>
+        </tr>
+        <tr>
+          <td class="red">Carboidrati</td>
+          <td>2150 kJ</td>
+          <td>892 kJ</td>
+          <td>11%</td>
+        </tr>
+        <tr>
+          <td class="red">Proteine</td>
+          <td>2150 kJ</td>
+          <td>892 kJ</td>
+          <td>11%</td>
+        </tr>
+      </table>
+    </div>
+    <div class="infoform__container container">
+      <h2>Acquista il tuo KitKat preferito</h2>
+      <form action="/" method="post" class="form">
+        <label for="name">Nome *</label>
+        <input class="inputheight" name="name" id="name" required />
+        <label for="email">Email *</label>
+        <input
+          class="inputheight"
+          type="email"
+          name="email"
+          id="email"
+          required
+        />
+        <label for="typekitkat">Scegli il tuo KitKat *</label>
+        <select
+          class="inputheight"
+          name="typekitkat"
+          id="typekitkat"
+          required
+        ></select>
+        <label>Quante confezioni vuoi? *</label>
+        <div class="radioform">
+          <div class="radioconfezioni">
+            <input
+              type="radio"
+              id="1 Confezione"
+              name="quantity"
+              value="1 Confezione"
+            />
+            <label class="labeltextsmall" for="1 Confezione"
+              >1 Confezione</label
+            >
+          </div>
+          <div class="radioconfezioni">
+            <input
+              type="radio"
+              id="5 Confezioni"
+              name="quantity"
+              value="5 Confezioni"
+            />
+            <label class="labeltextsmall" for="5 Confezioni"
+              >5 Confezioni</label
+            >
+          </div>
+          <div class="radioconfezioni">
+            <input
+              type="radio"
+              id="10 Confezioni"
+              name="quantity"
+              value="10 Confezioni"
+            />
+            <label class="labeltextsmall" for="10 Confezioni"
+              >10 Confezioni</label
+            >
+          </div>
+        </div>
+        <label for="infoform">Informazioni aggiuntive</label>
+        <input class="infoformbox" type="text" name="inform" id="infoform" />
+        <div class="checkboxform">
+          <input
+            type="checkbox"
+            name="privacypolicy"
+            id="privacypolicy"
+            required
+          />
+          <label class="labeltextsmall" for="privacypolicy">
+            Ho letto e accetto i termini della privacy e policy</label
+          >
+        </div>
+        <div class="formbtnbox">
+          <input class="redbtn formbtn" type="submit" value="Invia ordine" />
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer__container flex-vertical">
+      <img src="img/logo.png" alt="logo kitkat" />
+      <p>Copyright 2019 - KitKat srl</p>
+    </div>
+  </footer>
+
+  <body></body>
+</html>
